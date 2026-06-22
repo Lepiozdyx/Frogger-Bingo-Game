@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE5F035A2E90173A004E65F1 /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = CE5F03592E90173A004E65F1 /* AppsFlyerLib-Static */; };
 		CE7115A62E6F181600BFCB5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7115A52E6F181600BFCB5A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -36,11 +35,6 @@
 			path = AppTemplate;
 			sourceTree = "<group>";
 		};
-		CE9DBAB62E9014FA0065A837 /* AppsFlyer */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = AppsFlyer;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +42,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5F035A2E90173A004E65F1 /* AppsFlyerLib-Static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +51,6 @@
 		CE71152B2E6F0AB000BFCB5A = {
 			isa = PBXGroup;
 			children = (
-				CE9DBAB62E9014FA0065A837 /* AppsFlyer */,
 				CE7115A52E6F181600BFCB5A /* LaunchScreen.storyboard */,
 				CE7115362E6F0AB000BFCB5A /* AppTemplate */,
 				CE7115352E6F0AB000BFCB5A /* Products */,
@@ -100,11 +92,9 @@
 			);
 			fileSystemSynchronizedGroups = (
 				CE7115362E6F0AB000BFCB5A /* AppTemplate */,
-				CE9DBAB62E9014FA0065A837 /* AppsFlyer */,
 			);
 			name = AppTemplate;
 			packageProductDependencies = (
-				CE5F03592E90173A004E65F1 /* AppsFlyerLib-Static */,
 			);
 			productName = AppTemplate;
 			productReference = CE7115342E6F0AB000BFCB5A /* AppTemplate.app */;
@@ -135,7 +125,6 @@
 			mainGroup = CE71152B2E6F0AB000BFCB5A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				CE5F03582E90173A004E65F1 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CE7115352E6F0AB000BFCB5A /* Products */;
@@ -313,9 +302,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Frogger Bingo Game";
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to take photos.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to the photo library to save photos.";
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your permission helps us measure which advertising campaigns led to app installs and evaluate marketing performance.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to the camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow access to the photo library to add photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
@@ -351,9 +339,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Frogger Bingo Game";
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to take photos.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to the photo library to save photos.";
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your permission helps us measure which advertising campaigns led to app installs and evaluate marketing performance.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to the camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow access to the photo library to add photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
@@ -399,25 +386,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CE5F03582E90173A004E65F1 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.17.6;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CE5F03592E90173A004E65F1 /* AppsFlyerLib-Static */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE5F03582E90173A004E65F1 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
-			productName = "AppsFlyerLib-Static";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE71152C2E6F0AB000BFCB5A /* Project object */;
 }

@@ -5,14 +5,14 @@ import SwiftUI
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var application: UIApplication?
-    var afContinuation: CheckedContinuation<Void, Never>?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
         self.application = application
-
         showLoadingScreen()
         initApp()
-        
         return true
     }
     
